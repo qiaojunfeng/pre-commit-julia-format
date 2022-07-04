@@ -12,7 +12,7 @@
     if out == ""
         exit(0)
     else
-        @error "Some files have not been formatted !!!"
+        @error "Some files have been formatted !!!"
         write(stdout, out)
         exit(1)
     end'
