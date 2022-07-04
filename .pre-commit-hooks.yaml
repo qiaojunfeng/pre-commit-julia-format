@@ -1,0 +1,6 @@
+- id: julia-format
+  name: format julia code
+  description: Run `JuliaFormatter.jl` against Julia source files
+  language: system
+  files: \.jl$
+  entry: format.jl
