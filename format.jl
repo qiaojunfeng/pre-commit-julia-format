@@ -1,4 +1,7 @@
 #!/usr/bin/env julia
+# Provide a standalone executable for formatting Julia code.
+# Currently not used by the hook.
+#
 # Copied and adapted from
 # https://github.com/julia-actions/julia-format/blob/master/format.jl
 

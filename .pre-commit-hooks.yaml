@@ -3,4 +3,16 @@
   description: Run `JuliaFormatter.jl` against Julia source files
   language: system
   files: \.jl$
-  entry: format.jl
+  entry: |
+    julia -e '
+    Pkg.activate(".")
+    using JuliaFormatter
+    format(ARGS)
+    out = Cmd(`git diff --name-only`) |> read |> String
+    if out == ""
+        exit(0)
+    else
+        @error "Some files have not been formatted !!!"
+        write(stdout, out)
+        exit(1)
+    end'

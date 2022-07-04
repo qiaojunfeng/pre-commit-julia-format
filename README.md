@@ -4,7 +4,16 @@
 
 ## Hook Prerequisites
 
-* clang-format hook requires `clang-format` executable.
+* requires `JuliaFormatter.jl` installed in your current julia package environment.
+  i.e.,
+
+  ```bash
+  cd DIR_OF_YOUR_REPO/
+  julia       # start julia REPL
+  ]           # enter Pkg mode
+  activate .  # activate the environment of the current dir
+  status      # there should be a JuliaFormatter installed
+  ```
 
 ## Hook Installation
 
