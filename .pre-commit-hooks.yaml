@@ -4,7 +4,7 @@
   language: system
   files: \.jl$
   entry: |
-    julia -e '
+    julia --history-file no --startup-file no -e '
     using Pkg
     @info "Using julia project: $(Pkg.project().path)"
     using JuliaFormatter
