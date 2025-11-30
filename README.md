@@ -25,7 +25,7 @@ To use the hook, add the following code block to your `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/qiaojunfeng/pre-commit-julia-format
-  rev: v0.2.0                # use the most recent version
+  rev: v0.2.1                # use the most recent version
   hooks:
   - id: julia-format         # formatter for Julia code
 ```
